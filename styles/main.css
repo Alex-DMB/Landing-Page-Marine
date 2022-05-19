@@ -6,8 +6,8 @@
           box-sizing: border-box;
 }
 
-body {
-  margin-bottom: 800px;
+* p {
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -30,6 +30,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  border-bottom: 5px solid #1c7abe;
 }
 
 #disclaimer .enlistment-date {
@@ -45,20 +46,21 @@ body {
 }
 
 #disclaimer p {
-  font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
 
 #subscription-form {
+  outline: 1px solid #1c7abe;
+  border-radius: 1rem;
   background-color: silver;
   padding: 2rem;
   max-width: 22%;
 }
 
 #subscription-form p {
-  font-size: 1.5rem;
   color: black;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 #subscription-form .btn {
@@ -88,14 +90,63 @@ body {
 }
 
 #subscription-form .form-group label {
-  color: gray;
+  color: #636363;
   margin-bottom: 0.3rem;
+  text-align: center;
 }
 
 #subscription-form .form-group input, #subscription-form .form-group select {
   padding: 6px 8px;
   border-radius: 5px;
   border: none;
+  text-align: center;
+  border: 1px solid #1c7abe;
+}
+
+@-webkit-keyframes degrade {
+  from {
+    border-image: -webkit-gradient(linear, left top, right top, from(#ffa0a0), color-stop(#a0ffc8), to(#a0c8ff)) 1;
+    border-image: linear-gradient(to right, #ffa0a0, #a0ffc8, #a0c8ff) 1;
+  }
+  50% {
+    border-image: -webkit-gradient(linear, left top, right top, from(#a0c8ff), color-stop(#ffa0a0), to(#a0ffc8)) 1;
+    border-image: linear-gradient(to right, #a0c8ff, #ffa0a0, #a0ffc8) 1;
+  }
+  100% {
+    border-image: -webkit-gradient(linear, left top, right top, from(#a0ffc8), color-stop(#a0c8ff), to(#ffa0a0)) 1;
+    border-image: linear-gradient(to right, #a0ffc8, #a0c8ff, #ffa0a0) 1;
+  }
+}
+
+@keyframes degrade {
+  from {
+    -o-border-image: linear-gradient(to right, #ffa0a0, #a0ffc8, #a0c8ff) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#ffa0a0), color-stop(#a0ffc8), to(#a0c8ff)) 1;
+       border-image: linear-gradient(to right, #ffa0a0, #a0ffc8, #a0c8ff) 1;
+  }
+  50% {
+    -o-border-image: linear-gradient(to right, #a0c8ff, #ffa0a0, #a0ffc8) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#a0c8ff), color-stop(#ffa0a0), to(#a0ffc8)) 1;
+       border-image: linear-gradient(to right, #a0c8ff, #ffa0a0, #a0ffc8) 1;
+  }
+  100% {
+    -o-border-image: linear-gradient(to right, #a0ffc8, #a0c8ff, #ffa0a0) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#a0ffc8), color-stop(#a0c8ff), to(#ffa0a0)) 1;
+       border-image: linear-gradient(to right, #a0ffc8, #a0c8ff, #ffa0a0) 1;
+  }
+}
+
+#key-duties {
+  border-bottom: 5px solid;
+  -o-border-image: linear-gradient(to right, #ffa0a0, #a0ffc8, #a0c8ff) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#ffa0a0), color-stop(#a0ffc8), to(#a0c8ff)) 1;
+     border-image: linear-gradient(to right, #ffa0a0, #a0ffc8, #a0c8ff) 1;
+  -webkit-animation-name: degrade;
+          animation-name: degrade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #key-duties h2 {
@@ -107,16 +158,19 @@ body {
 #key-duties #duty-1 {
   background-image: url("/img/duties/mariner.png");
   background-position: top;
+  outline: 15px solid #ffa0a0;
 }
 
 #key-duties #duty-2 {
   background-image: url("/img/duties/people.png");
   background-position: top;
+  outline: 15px solid #a0ffc8;
 }
 
 #key-duties #duty-3 {
   background-image: url("/img/duties/mariners.jpg");
   background-position: left;
+  outline: 15px solid #a0c8ff;
 }
 
 #key-duties .duties {
@@ -143,14 +197,87 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 20%;
-  color: gray;
+  color: #636363;
 }
 
 #key-duties .duty .duty-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   background-size: cover;
+}
+
+#location {
+  height: 70vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.7))), url("/img/location/G-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("/img/location/G-1.png");
+  background-position: bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 5px solid #1c7abe;
+}
+
+#location #adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#location #adress i {
+  color: #1c7abe;
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+#location #adress p {
+  color: white;
+  text-shadow: 0 0 20px black;
+}
+
+#location #about-location {
+  max-width: 400px;
+}
+
+#location #about-location h3 {
+  font-size: 5rem;
+  color: #1c7abe;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px black;
+}
+
+#location #about-location p {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 0 20px black;
+  line-height: 1.5em;
+}
+
+#footer {
+  background-color: silver;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#footer h3 {
+  color: #636363;
+  margin-bottom: 0.5rem;
+}
+
+#footer img {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+#footer a {
+  color: #636363;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,25 +1,26 @@
 .logo{width: 15rem; margin-bottom: 3rem;}
 
 #enlistment-description{background: linear-gradient(rgba(black,.6),rgba(black,0.9)), url("/img/QG_Marine.png");
-  background-size: cover; background-position: center; height: 85vh; display: flex; justify-content: space-around; align-items: center; color: $text-color;}
+  background-size: cover; background-position: center; height: 85vh; display: flex; justify-content: space-around; align-items: center; color: $text-color; border-bottom: 5px solid $primary-color;}
   
 #disclaimer{
   .enlistment-date{color: $primary-color;}
   .about-enlistment{font-size: 2rem; text-transform: uppercase; font-weight: bold; max-width: 300px; margin-bottom: 1rem;}
-  p{font-size: 1.2rem; margin-bottom: 0.2rem;}
+  p{margin-bottom: 0.2rem;}
 }
 
 #subscription-form{
-  
+  outline: 1px solid $primary-color; border-radius: 1rem;
+
   background-color: $secondary-color; padding: 2rem; max-width: 22%;
 
-  p{font-size: 1.5rem; color: $text-secondary; margin-bottom: 1rem;}
+  p{color: $text-secondary; margin-bottom: 1rem; text-align: center;}
 
   .btn{background-color: $primary-color; color: $text-color; text-transform: uppercase; width: 100%; padding: 12px; cursor: pointer; margin: 1rem 0; opacity: 0.8; }
   .btn:hover{opacity: 1;}
 
   .form-group{
     display: flex; flex-direction: column; margin-bottom: 0.8rem;
-    label{color: $text-tertiary; margin-bottom: 0.3rem;}
-    input,select{padding: 6px 8px; border-radius: 5px; border: none;}}
+    label{color: $text-tertiary; margin-bottom: 0.3rem; text-align: center;}
+    input,select{padding: 6px 8px; border-radius: 5px; border: none; text-align: center; border: 1px solid $primary-color;}}
 }

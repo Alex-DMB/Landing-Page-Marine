@@ -1,13 +1,22 @@
+
+@keyframes degrade{
+  from {border-image: linear-gradient(to right, $soft-red, $soft-green, $soft-blue) 1;}
+  50% {border-image: linear-gradient(to right, $soft-blue, $soft-red, $soft-green) 1;}
+  100% {border-image: linear-gradient(to right, $soft-green, $soft-blue, $soft-red) 1;}
+}
+
 #key-duties{
   h2{background-color: $secondary-color; padding: 3rem 0; text-align: center;}
+  
+  border-bottom: 5px solid; border-image: linear-gradient(to right, $soft-red, $soft-green, $soft-blue) 1;
+  animation-name: degrade; animation-duration: 2s; animation-iteration-count: infinite;
+  #duty-1{background-image: url("/img/duties/mariner.png"); background-position: top; outline: 15px solid $soft-red;}
+  #duty-2{background-image: url("/img/duties/people.png"); background-position: top; outline: 15px solid $soft-green;}
+  #duty-3{background-image: url("/img/duties/mariners.jpg"); background-position: left; outline: 15px solid $soft-blue;}
 
-  #duty-1{background-image: url("/img/duties/mariner.png"); background-position: top;}
-  #duty-2{background-image: url("/img/duties/people.png"); background-position: top;}
-  #duty-3{background-image: url("/img/duties/mariners.jpg"); background-position: left;}
-
-  .duties{display: flex; justify-content: space-around; padding: 4rem; width: 80%; margin: 0 auto;}
+  .duties{display: flex; justify-content: space-around; padding: 4rem; width: 80%; margin: 0 auto; }
   .duty{text-align: center; display: flex; flex-direction: column; align-items: center; max-width: 20%; color: $text-tertiary;
-  .duty-img{width: 300px; height: 300px; border-radius: 50%; margin-bottom: 2rem; background-size: cover;}}
+  .duty-img{width: 300px; height: 300px; border-radius: 50%; margin-bottom: 3rem; background-size: cover;}}
 
 }
 
