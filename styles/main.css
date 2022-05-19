@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 800px;
+}
+
+.logo {
+  width: 15rem;
+  margin-bottom: 3rem;
+}
+
+#enlistment-description {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.9))), url("/img/QG_Marine.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/img/QG_Marine.png");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#disclaimer .enlistment-date {
+  color: #1c7abe;
+}
+
+#disclaimer .about-enlistment {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+#disclaimer p {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#subscription-form {
+  background-color: silver;
+  padding: 2rem;
+  max-width: 22%;
+}
+
+#subscription-form p {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+#subscription-form .btn {
+  background-color: #1c7abe;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  margin: 1rem 0;
+  opacity: 0.8;
+}
+
+#subscription-form .btn:hover {
+  opacity: 1;
+}
+
+#subscription-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+#subscription-form .form-group label {
+  color: gray;
+  margin-bottom: 0.3rem;
+}
+
+#subscription-form .form-group input, #subscription-form .form-group select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+#key-duties h2 {
+  background-color: silver;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#key-duties #duty-1 {
+  background-image: url("/img/duties/mariner.png");
+  background-position: top;
+}
+
+#key-duties #duty-2 {
+  background-image: url("/img/duties/people.png");
+  background-position: top;
+}
+
+#key-duties #duty-3 {
+  background-image: url("/img/duties/mariners.jpg");
+  background-position: left;
+}
+
+#key-duties .duties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#key-duties .duty {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 20%;
+  color: gray;
+}
+
+#key-duties .duty .duty-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
