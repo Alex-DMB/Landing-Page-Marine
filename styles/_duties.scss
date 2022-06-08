@@ -9,14 +9,24 @@
   h2{background-color: $secondary-color; padding: 3rem 0; text-align: center;}
   
   border-bottom: 5px solid; border-image: linear-gradient(to right, $soft-red, $soft-green, $soft-blue) 1;
-  animation-name: degrade; animation-duration: 2s; animation-iteration-count: infinite;
+
+  animation: degrade 2s linear 0s infinite alternate;
+
+
   #duty-1{background-image: url("/img/duties/mariner.png"); background-position: top; outline: 15px solid $soft-red;}
   #duty-2{background-image: url("/img/duties/people.png"); background-position: top; outline: 15px solid $soft-green;}
   #duty-3{background-image: url("/img/duties/mariners.jpg"); background-position: left; outline: 15px solid $soft-blue;}
 
-  .duties{display: flex; justify-content: space-around; padding: 4rem; width: 80%; margin: 0 auto; }
-  .duty{text-align: center; display: flex; flex-direction: column; align-items: center; max-width: 20%; color: $text-tertiary;
-  .duty-img{width: 300px; height: 300px; border-radius: 50%; margin-bottom: 3rem; background-size: cover;}}
+
+  
+  .duties{display: flex; justify-content: center; padding: 4rem 0; width: 80%; margin: 0 auto; flex-wrap: wrap;}
+
+
+  .duty{text-align: center; display: flex; flex-direction: column; align-items: center; color: $text-tertiary; flex: 1 1 350px; margin-bottom: 5rem;}
+
+  .duty p{max-width: 340px;}
+
+  .duty-img{width: 300px; height: 300px; border-radius: 50%; margin-bottom: 3rem; background-size: cover;}
 
 }
 

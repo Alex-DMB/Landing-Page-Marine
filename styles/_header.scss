@@ -12,7 +12,7 @@
 #subscription-form{
   outline: 1px solid $primary-color; border-radius: 1rem;
 
-  background-color: $secondary-color; padding: 2rem; max-width: 22%;
+  background-color: $secondary-color; padding: 2rem; min-width: 320px; max-width: 30%;
 
   p{color: $text-secondary; margin-bottom: 1rem; text-align: center;}
 
